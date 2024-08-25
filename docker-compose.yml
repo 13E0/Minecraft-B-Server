@@ -1,0 +1,19 @@
+services:
+  mc:
+    container_name: mcv-docker-0.1
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: FORGE
+      VERSION: "1.20.1"
+      FORGE_VERSION: "47.3.1"
+      MEMORY: "6G"
+      MAX_MEMORY: "8G"
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - G:\Docker\data:/data
+    restart: on-failure:3
