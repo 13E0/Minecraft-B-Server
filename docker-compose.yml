@@ -15,5 +15,5 @@ services:
       MAX_MEMORY: "8G"
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - G:\Docker\data:/data
+      - /home/nekooitine/MC-Server/Docker-server/data:/data
     restart: on-failure:3
