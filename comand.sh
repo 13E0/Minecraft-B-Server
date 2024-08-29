@@ -24,11 +24,11 @@ case $PARAMETER in
         docker restart mcv-docker-0.1
         ;;
     console)
-        echo "Checking the process status..."
+        echo "Opening server console..."
         docker exec -i mcv-docker-0.1 rcon-cli
         ;;
     logs)
-        echo "Checking the process status..."
+        echo "Opening server logs..."
         docker container logs mcv-docker-0.1
         ;;
     *)
