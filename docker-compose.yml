@@ -16,7 +16,7 @@ services:
       MAX_TICK_TIME: "-1"
       ENABLE_AUTOPAUSE: "true"
       AUTOPAUSE_TIMEOUT_EST: "360"
-      AUTOPAUSE_TIMEOUT_INIT: "30"
+      AUTOPAUSE_TIMEOUT_KN: "30"
       ONLINE_MODE: "false"
     volumes:
       # attach the relative directory 'data' to the container's /data path
