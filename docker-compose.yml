@@ -13,6 +13,9 @@ services:
       FORGE_VERSION: "47.3.1"
       MEMORY: "6G"
       MAX_MEMORY: "8G"
+      MAX_TICK_TIME: "-1"
+      ENABLE_AUTOPAUSE: "true"
+      ONLINE_MODE: "false"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - /home/nekooitine/MC-Server/Docker-server/data:/data
