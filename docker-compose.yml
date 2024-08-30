@@ -10,7 +10,7 @@ services:
       EULA: "TRUE"
       TYPE: FABRIC
       VERSION: "1.21.1"
-      FABRIC_LAUNCHER_VERSION: "0.16.3"
+      FABRIC_LOADER_VERSION: "0.16.3"
       MEMORY: "6G"
       MAX_MEMORY: "8G"
       MAX_TICK_TIME: "-1"
