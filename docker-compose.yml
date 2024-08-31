@@ -18,6 +18,8 @@ services:
       AUTOPAUSE_TIMEOUT_EST: "360"
       AUTOPAUSE_TIMEOUT_KN: "30"
       ONLINE_MODE: "false"
+      ALLOW_FLIGHT: "true"
+      MAX_PLAYERS: "8"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - /home/nekooitine/MC-Server/Docker-server/data:/data
