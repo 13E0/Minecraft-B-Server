@@ -9,7 +9,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: FABRIC
-      VERSION: "1.21.1"
+      VERSION: "1.20.1"
       FABRIC_LOADER_VERSION: "0.16.3"
       MEMORY: "6G"
       MAX_MEMORY: "8G"
