@@ -20,6 +20,8 @@ services:
       ONLINE_MODE: "false"
       ALLOW_FLIGHT: "true"
       MAX_PLAYERS: "8"
+      MOTD: "A Mine and Chill Server"
+      ICON: /home/nekooitine/MC-Server/Docker-server/data/icon/minecraft_title.png
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - /home/nekooitine/MC-Server/Docker-server/data:/data
