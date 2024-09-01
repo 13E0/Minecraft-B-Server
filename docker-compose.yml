@@ -21,6 +21,7 @@ services:
       ALLOW_FLIGHT: "true"
       MAX_PLAYERS: "8"
       LEVEL_TYPE: "bclib:betterx"
+      SEED: "-8810425169676434200"
       MOTD: "A Mine and Chill Server"
       ICON: /data/server-icon.png
     volumes:
