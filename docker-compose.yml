@@ -20,6 +20,7 @@ services:
       ONLINE_MODE: "false"
       ALLOW_FLIGHT: "true"
       MAX_PLAYERS: "8"
+      LEVEL_TYPE: "bclib:betterx"
       MOTD: "A Mine and Chill Server"
       ICON: /data/server-icon.png
     volumes:
