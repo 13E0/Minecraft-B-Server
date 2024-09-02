@@ -24,6 +24,7 @@ services:
       SEED: "-8810425169676434200"
       MOTD: "A Mine and Chill Server"
       ICON: /data/server-icon.png
+      SPAWN_PROTECTION: "0"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - /home/nekooitine/MC-Server/Docker-server/data:/data
