@@ -20,7 +20,6 @@ case $PARAMETER in
             -v /var/run/docker.sock:/var/run/docker.sock \
             -v /var/lib/docker/volumes:/var/lib/docker/volumes \
             -v /:/host \
-            -e AGENT_SECRET=yoursecret \ 
             portainer/agent:2.21.0
         ;;
     start)
