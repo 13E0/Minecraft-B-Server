@@ -25,6 +25,8 @@ services:
       MOTD: "A Mine and Chill Server"
       ICON: /data/server-icon.png
       SPAWN_PROTECTION: "0"
+      RESOURCE_PACK: https://download.mc-packs.net/pack/8e817f824918f23f9978f21054c1dd07c12b6368.zip
+      RESOURCE_PACK_SHA1: 8e817f824918f23f9978f21054c1dd07c12b6368
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - /home/nekooitine/MC-Server/Docker-server/data:/data
