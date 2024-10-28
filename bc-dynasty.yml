@@ -1,0 +1,32 @@
+services:
+  mc:
+    container_name: mcv-docker-0.1
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: FORGE
+      VERSION: "1.20.1"
+      FORGE_VERSION: "47.3.7"
+      MEMORY: "6G"
+      MAX_MEMORY: "8G"
+      MAX_TICK_TIME: "-1"
+      ENABLE_AUTOPAUSE: "true"
+      AUTOPAUSE_TIMEOUT_EST: "360"
+      AUTOPAUSE_TIMEOUT_KN: "30"
+      ONLINE_MODE: "false"
+      ALLOW_FLIGHT: "true"
+      MAX_PLAYERS: "8"
+      LEVEL_TYPE: "bclib:betterx"
+      MOTD: "A new Dynasty await"
+      DIFFICULTY: "hard"
+      # ICON: /data/server-icon.png
+      SPAWN_PROTECTION: "0"
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      # - /home/nekooitine/MC-Server/Docker-server/data:/data
+      - G:\Docker\bc-data:/data
+    restart: on-failure:3

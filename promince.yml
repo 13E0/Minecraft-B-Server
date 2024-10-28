@@ -1,0 +1,31 @@
+services:
+  mc:
+    container_name: prominence-docker-0.1
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      CF_API_KEY: $2a$10$7lC1uR9fHAdcWX3vPiUoseVveCMZ6d7hQlGm/vuc3.pSYFvpJ0X2u
+      EULA: "TRUE"
+      TYPE: AUTO_CURSEFORGE
+      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/prominence-2-rpg/files/5714809
+      CF_SLUG: "prominence-2-rpg"
+      MEMORY: "6G"
+      MAX_MEMORY: "8G"
+      MAX_TICK_TIME: "-1"
+      ENABLE_AUTOPAUSE: "true"
+      AUTOPAUSE_TIMEOUT_EST: "360"
+      AUTOPAUSE_TIMEOUT_KN: "30"
+      ONLINE_MODE: "false"
+      ALLOW_FLIGHT: "true"
+      MAX_PLAYERS: "8"
+      LEVEL_TYPE: "bclib:betterx"
+      SEED: "-8810425169676434200"
+      MOTD: "A Mine and Chill Server"
+      SPAWN_PROTECTION: "0"
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - G:\Docker\promince:/data
+    restart: on-failure:3
