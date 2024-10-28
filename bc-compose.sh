@@ -12,7 +12,7 @@ PARAMETER=$1
 case $PARAMETER in
     up)
         echo "Starting the docker compose ..."
-        docker compose up -d
+        docker compose -f bc-dynasty.yml up -d
         ;;
     down)
         echo "Stopping the process..."
