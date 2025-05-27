@@ -1,0 +1,31 @@
+services:
+  mc:
+    container_name: mcv-docker-1.0
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      CF_API_KEY: $2a$10$7lC1uR9fHAdcWX3vPiUoseVveCMZ6d7hQlGm/vuc3.pSYFvpJ0X2u
+      EULA: "TRUE"
+      TYPE: AUTO_CURSEFORGE
+      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/beyond-depth/files/6548858
+      CF_SLUG: "beyond-depth"
+      CF_IGNORE_MISSING_FILES: mods/controllable-forge-1.20.1-0.21.7.jar,mods/enhanced_boss_bars-1.20.1-1.0.0.jar
+      MEMORY: "6G"
+      MAX_MEMORY: "10G"
+      MAX_TICK_TIME: "-1"
+      ENABLE_AUTOPAUSE: "true"
+      AUTOPAUSE_TIMEOUT_EST: "360"
+      AUTOPAUSE_TIMEOUT_KN: "30"
+      ONLINE_MODE: "false"
+      ALLOW_FLIGHT: "true"
+      MAX_PLAYERS: "10"
+      MOTD: "Beyond Depth"
+      SPAWN_PROTECTION: "0"
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - I:\Docker\beyond-depth:/data
+       # - /home/nekooitine/MC-Server/Docker-server/beyond-depth/data:/data
+    restart: on-failure:3
