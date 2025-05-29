@@ -14,14 +14,14 @@ case $PARAMETER in
     init)
         echo "Init the docker agent..."
         docker run -d \
-            -p 9001:9001 \
-            -e AGENT_SECRET=whooimboutamakeanameformyselfyea \
-            --name portainer_agent \
-            --restart=always \
-            -v /var/run/docker.sock:/var/run/docker.sock \
-            -v /var/lib/docker/volumes:/var/lib/docker/volumes \
-            -v /:/host \
-            portainer/agent:2.21.1
+        -p 9001:9001 \
+        -e AGENT_SECRET=whooimboutamakeanameformyselfyea \
+        --name portainer_agent \
+        --restart=always \
+        -v /var/run/docker.sock:/var/run/docker.sock \
+        -v /var/lib/docker/volumes:/var/lib/docker/volumes \
+        -v /:/host \
+        portainer/agent:2.27.6
         ;;
     start)
         echo "Starting the  docker agent..."
