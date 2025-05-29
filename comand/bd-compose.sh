@@ -12,7 +12,7 @@ PARAMETER=$1
 case $PARAMETER in
     up)
         echo "Starting the docker compose ..."
-        docker compose -f compose/beyond-depth.yml up -d
+        docker compose -f ./compose/beyond-depth.yml up -d
         ;;
     down)
         echo "Stopping the process..."
