@@ -26,6 +26,6 @@ services:
       SPAWN_PROTECTION: "0"
     volumes:
       # attach the relative directory 'data' to the container's /data path
-      - I:\Docker\beyond-depth:/data
-       # - /home/nekooitine/MC-Server/Docker-server/beyond-depth/data:/data
+      # - I:\Docker\beyond-depth:/data
+       - /home/nekooitine/Docker/beyond-depth/data:/data
     restart: on-failure:3
