@@ -24,6 +24,7 @@ services:
       MAX_PLAYERS: "10"
       MOTD: "Beyond Depth"
       SPAWN_PROTECTION: "0"
+      PVP: "false"
     volumes:
       # attach the relative directory 'data' to the container's /data path
       # - I:\Docker\beyond-depth:/data
