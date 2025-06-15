@@ -10,9 +10,9 @@ services:
       CF_API_KEY: $2a$10$7lC1uR9fHAdcWX3vPiUoseVveCMZ6d7hQlGm/vuc3.pSYFvpJ0X2u
       EULA: "TRUE"
       TYPE: AUTO_CURSEFORGE
-      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/beyond-depth/files/6548858
+      CF_PAGE_URL: https://www.curseforge.com/minecraft/modpacks/beyond-depth/files/6649630
       CF_SLUG: "beyond-depth"
-      CF_IGNORE_MISSING_FILES: mods/controllable-forge-1.20.1-0.21.7.jar,mods/enhanced_boss_bars-1.20.1-1.0.0.jar
+      CF_IGNORE_MISSING_FILES: mods/controllable-forge-1.20.1-0.21.7.jar,mods/enhanced_boss_bars-1.20.1-1.0.0.jar,mods/Essential_1-3-6-2_forge_1-20-1.jar
       MEMORY: "12G"
       MAX_MEMORY: "16G"
       MAX_TICK_TIME: "-1"
