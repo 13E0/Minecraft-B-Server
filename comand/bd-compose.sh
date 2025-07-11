@@ -16,11 +16,11 @@ case $PARAMETER in
         ;;
     down)
         echo "Stopping the process..."
-        docker compose down 
+        docker compose -f ../compose/beyond-depth.yml down 
         ;;
     log)
         echo "Restarting the process..."
-        docker compose logs
+        docker compose -f ../compose/beyond-depth.yml logs
         ;;
     *)
         echo "Invalid option. Please use one of the following: start, stop, restart, status"
